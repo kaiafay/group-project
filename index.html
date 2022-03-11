@@ -9,33 +9,44 @@
   </head>
   <body>
     <div>
-      <header>
-        <h1>Business Searcher</h1>
+      <header class="box">
+        <h1 class="title is-1 has-text-centered is-uppercase">Business Searcher</h1>
       </header>
     </div>
 
     <!-- container for yelp api -->
-    <div>
-        <h3>Search for a Business: </h3>
+    <div class="box notification is-info">
+
+        <div class="title is-size-3">Search for a Business: </div>
         <!-- placeholder for results -->
-        <div id="results">
+        <div class="content is large" id="results">
 
         </div>
+
     </div>
 
     <!-- container for search history -->
-    <div class="search-history">
-      <ul id="searches">
-          <!-- placeholder for search history -->
-      </ul>
+    <div class="container">
+
+        <div class="search-history">
+            <ul id="searches">
+                <!-- placeholder for search history -->
+            </ul>
+        </div>
+
     </div>
 
     <!-- container for maps api -->
-    <div id="maps">
-      <!-- placeholder for directions -->
+    <div class="container">
+
+        <div id="maps">
+            <!-- placeholder for directions -->
+        </div>
+
     </div>
 
     <script src="assets/js/yelp.js"></script>
     <script src="assets/js/maps.js"></script>
+
   </body>
 </html>
