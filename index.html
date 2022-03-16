@@ -4,22 +4,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="assets/css/style.css" rel="stylesheet" />
-    <title>Business Searcher</title>
+    <title>Let's Talk Recipes!</title>
   </head>
   <body>
     <div>
       <header>
-        <h1>Business Searcher</h1>
+        <h1>Let's Talk Recipes!</h1>
       </header>
     </div>
 
-    <!-- container for yelp api -->
+    <!-- container for meal api -->
     <div>
-        <h3>Search for a Business: </h3>
+        <h3>Search for a Meal: </h3>
         <!-- form for business search -->
-        <form id="search-business">
-          <label class="form-label" for="business"></label>
-          <input name="business" id="business" type="text" autofocus="true" class="form-input" />
+        <form id="search-meal">
+          <label class="form-label" for="meal"></label>
+          <input name="meal" id="meal" type="text" autofocus="true" class="form-input" />
           <button type="submit" class="" id="submit-search">Search</button>
         </form>
         <!-- placeholder for results -->
@@ -35,13 +35,13 @@
       </ul>
     </div>
 
-    <!-- container for maps api -->
-    <div id="maps">
-      <!-- placeholder for directions -->
+    <!-- container for speech api -->
+    <div id="speech">
+      <!-- placeholder for text -->
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/js/yelp.js"></script>
-    <script src="assets/js/maps.js"></script>
+    <script src="assets/js/meal.js"></script>
+    <script src="assets/js/speech.js"></script>
   </body>
 </html>
