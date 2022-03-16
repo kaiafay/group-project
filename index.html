@@ -3,38 +3,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link href="assets/css/style.css" rel="stylesheet" />
     <title>Let's Talk Recipes!</title>
   </head>
   <body>
     <div>
-      <header>
-        <h1>Let's Talk Recipes!</h1>
+      <header class="box">
+        <h1 class="title is-1 has-text-centered is-uppercase">Let's Talk Recipes!</h1>
       </header>
     </div>
 
     <!-- container for meal api -->
-    <div>
-        <h3>Search for a Meal: </h3>
+    <div class="box notification is-info">
+        <h3 class="title is-size-3">Search for a Meal: </h3>
         <!-- form for business search -->
         <form id="search-meal">
           <label class="form-label" for="meal"></label>
           <input name="meal" id="meal" type="text" autofocus="true" class="form-input" />
           <button type="submit" class="" id="submit-search">Search</button>
         </form>
+      
         <!-- placeholder for results -->
-        <div id="results">
+        <div class="content is large" id="results">
 
         </div>
+
     </div>
 
     <!-- container for search history -->
-    <div class="search-history">
-      <ul id="searches">
-          <!-- placeholder for search history -->
-      </ul>
-    </div>
+    <div class="box notification is-success">
 
+        <div class="search-history">
+            <ul id="searches">
+                <!-- placeholder for search history -->
+            </ul>
+        </div>
+
+    </div>
+   
     <!-- container for speech api -->
     <div id="speech">
       <!-- placeholder for text -->
