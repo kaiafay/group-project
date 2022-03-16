@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link href="assets/css/style.css" rel="stylesheet" />
-    <title>Business Searcher</title>
+    <title>Let's Talk Recipes!</title>
   </head>
   <body>
     <div>
       <header class="box">
-        <h1 class="title is-1 has-text-centered is-uppercase">Business Searcher</h1>
+        <h1 class="title is-1 has-text-centered is-uppercase">Let's Talk Recipes!</h1>
       </header>
     </div>
 
-    <!-- container for yelp api -->
+    <!-- container for meal api -->
     <div class="box notification is-info">
-
-        <div class="title is-size-3">Search for a Business: </div>
+        <h3 class="title is-size-3">Search for a Meal: </h3>
+        <!-- form for business search -->
+        <form id="search-meal">
+          <label class="form-label" for="meal"></label>
+          <input name="meal" id="meal" type="text" autofocus="true" class="form-input" />
+          <button type="submit" class="" id="submit-search">Search</button>
+        </form>
+      
         <!-- placeholder for results -->
         <div class="content is large" id="results">
 
@@ -35,18 +41,14 @@
         </div>
 
     </div>
-
-    <!-- container for maps api -->
-    <div class="container">
-
-        <div id="maps">
-            <!-- placeholder for directions -->
-        </div>
-
+   
+    <!-- container for speech api -->
+    <div id="speech">
+      <!-- placeholder for text -->
     </div>
 
-    <script src="assets/js/yelp.js"></script>
-    <script src="assets/js/maps.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/meal.js"></script>
+    <script src="assets/js/speech.js"></script>
   </body>
 </html>
