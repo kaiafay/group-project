@@ -34,12 +34,13 @@ var displayMeals = function(data) {
     for(var i=0; i < data.meals.length; i++) {
         var mealLink = document.createElement("p");
         mealLink.textContent = data.meals[i].strMeal
-        mealLink.setAttribute("class", "meal-card")
+        mealLink.setAttribute("class", "meal-card title is-4")
         mealContainer.append(mealLink);
         var ingredientList = document.createElement("ul");
         mealLink.append(ingredientList);
         ingredientList.setAttribute("style", "display: none");
-        ingredientList.setAttribute("class", "ingredient-list");
+        // add bulma styling
+        ingredientList.setAttribute("class", "ingredient-list subtitle is-6");
 
         // loop through ingredient list and display them on the page
         for(var j=1; j < 21; j++) {
@@ -54,6 +55,8 @@ var displayMeals = function(data) {
     var instructions = document.createElement("p");
     instructions.textContent = data.meals[i].strInstructions;
     instructions.setAttribute("style", "display: none");
+    // add bulma styling
+    instructions.setAttribute("class", "subtitle is-6");
     // append instructions to the mealLink
     mealLink.append(instructions);
     };
