@@ -71,7 +71,7 @@ searchBtn.addEventListener("click", function(event) {
 
 // event listener that shows ingredients and instructions upon clicking on a meal
 document.addEventListener("click", function(e) {
-    if(e.target.matches("#meal-card")) {
+    if(e.target.matches(".meal-card")) {
         e.target.children[0].setAttribute("style", "display: block");
         e.target.children[1].setAttribute("style", "display: block");
     };
