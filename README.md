@@ -1,33 +1,24 @@
-# group-project
+# Let's Talk Recipes!
 
-## Requirements
+## Purpose
+An application that allows users to search for recipes, and will read the recipes aloud via text-to-speech
 
-## Files & directories
+## Built With
+* HTML 
+* Javascript
+* jQuery
+* ResponiveVoice API
+* TheMealDB API
+* Bulma
 
--group-project <br />
-  -assets <br />
-    -css <br />
-      -style.css <br />
-    -js <br />
-      -meal.js<br />
-      -speach.js<br />
-    -screenshots <br />
-      -group-project.jpeg<br />
-    -gitignore <br />
-    -index.html <br />
-    -README.md <br />
+## Website
+(GitHub Page link here)
 
-## Project Notes
+## Contribution
+* HTML - Kaia Innes 
+* CSS - Travis Nelson
+* TheMeal DB API - Kaia Scheirman
+* ResponiveVOice API - Jack Ford
 
-this project was created with javascript, third party libraries, and was created by a team of 4 developers
-
-## Screenshots
-
-<img src="./assets/screenshots/group-project.JPG">
-
-
-## Link
-
-[link](https://github.com/kaiafay/group-project)
-
-## Credits
+![](../../../Pictures/Screenshots/ltm%20sc.png)
+>>>>>>> 3751c7bc62fb43a707309eaa62e6bc6d5c147f1f
