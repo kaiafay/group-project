@@ -12,7 +12,7 @@ An application that allows users to search for recipes, and will read the recipe
 * Bulma
 
 ## Website
-(GitHub Page link here)
+https://kaiafay.github.io/group-project/
 
 ## Contribution
 * HTML - Kaia Innes 
