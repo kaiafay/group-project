@@ -6,6 +6,30 @@ var mealInput = document.getElementById("meal");
 
 var apiUrl = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
+var onLoad = function() {
+    var lastSearch = localStorage.getItem("search");
+    if(lastSearch) {
+        // set variable for meal api url
+        var mealUrl = apiUrl + lastSearch;
+    
+        fetch(mealUrl).then(function(response) {
+            // check to see if response is successful
+            if (response.ok) {
+                return response.json().then(function(data) {
+                    displayMeals(data);
+                });
+            } else {
+                alert("Error: " + response.statusText);
+            };
+        });
+    } else {
+        console.log("no search");
+    };
+};
+
+// run function on page load
+onLoad();
+
 // function to get meal api data for recipes
 var getMeals = function() {
     // set meal variable to meal input value
@@ -17,8 +41,6 @@ var getMeals = function() {
         // check to see if response is successful
         if (response.ok) {
             return response.json().then(function(data) {
-                // console log data
-                console.log(data);
                 displayMeals(data);
             });
         } else {
@@ -61,10 +83,14 @@ var displayMeals = function(data) {
     mealLink.append(instructions);
     };
 };
+
+
 // add event listener to the search button
 searchBtn.addEventListener("click", function(event) {
     event.preventDefault();
-
+    var searched = $("#meal").val()
+    // save search to local storage
+    localStorage.setItem("search", searched);
     // clear previous data
     mealContainer.innerHTML = '';
     // call the function to get the meal data
