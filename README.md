@@ -20,4 +20,4 @@ https://kaiafay.github.io/group-project/
 * TheMeal DB API - Kaia Scheirman
 * ResponiveVoice API - Jack Ford
 
-![ltm sc](https://user-images.githubusercontent.com/98244224/158924516-90cbcb12-4ed2-4070-8f1a-316ea78e19eb.png)
+<img src="./assets/screenshots/group-project.JPG">
